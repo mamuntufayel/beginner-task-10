@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "3 month BODYBUILDER",
+        "price": "$300",
+        "description": "In this package you get 3 months bodybuilding instructions",
+        "img": "https://i.ibb.co/S5vgNkX/luis-reyes-m-Tor-Q9g-Ff-Og-unsplash.jpg"
+    },
+    {
+        "id": 2,
+        "name": "12 week fat destroy",
+        "price": "$100",
+        "description": "In this package you get 3 months bodybuilding instructions",
+        "img": "https://i.ibb.co/QKyhqpr/alexander-redl-qo1py-CD02t4-unsplash.jpg"
+    },
+    {
+        "id": 3,
+        "name": "6 week fat loss",
+        "price": "$150",
+        "description": "In this package you get 6 weeks bodybuilding instructions",
+        "img": "https://i.ibb.co/8dnf2Xv/samuel-girven-fq-Mu99l8sqo-unsplash.jpg"
+    },
+    {
+        "id": 4,
+        "name": "8 weeks belly fat loss",
+        "price": "$180",
+        "description": "In this package you get 2 months bodybuilding instruction",
+        "img": "https://i.ibb.co/gdrJg89/valery-sysoev-LDAir-ERNzew-unsplash.jpg"
+    },
+    {
+        "id": 5,
+        "name": "3 month mass gain",
+        "price": "$100",
+        "description": "In this package you get 3 months bodybuilding instruction.",
+        "img": "https://i.ibb.co/JtQKyhx/anastase-maragos-9dz-WZQWZMd-E-unsplash.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Athlete body workout",
+        "price": "$300",
+        "description": "In this package you get 3 months Athlete body workout instruction",
+        "img": "https://i.ibb.co/MPLhcsN/daniel-apodaca-Wdo-Qio6-HPVA-unsplash.jpg"
+    }
+]
