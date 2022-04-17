@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import SocialLogin from "../SocialLogin/SocialLogin";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -11,7 +13,7 @@ const SignUp = () => {
   const navigate = useNavigate();
   let showError;
 
-  const [createUserWithEmailAndPassword, user, loading, error] =
+  const [createUserWithEmailAndPassword, user, error] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
   const handleEmailAtBlur = (event) => {
@@ -39,11 +41,11 @@ const SignUp = () => {
   const handleOnSubmit = (event) => {
     event.preventDefault();
     if (password !== confirmPassword) {
-      alert("Password Did not match");
+      toast("Password Did not match");
       return;
     }
     if (password.length < 6) {
-      alert("Password length must be more than 6");
+      toast("Password length must be more than 6");
       return;
     }
     createUserWithEmailAndPassword(email, password);
@@ -78,7 +80,7 @@ const SignUp = () => {
           />
         </Form.Group>
 
-        {error}
+        {showError}
         <Button variant="primary" type="submit">
           Register
         </Button>
@@ -94,6 +96,7 @@ const SignUp = () => {
           </span>
         </p>
         <SocialLogin></SocialLogin>
+        <ToastContainer />
       </Form>
     </div>
   );
