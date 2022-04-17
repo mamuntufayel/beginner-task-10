@@ -8,6 +8,8 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate = useNavigate();
+  let showError;
 
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
@@ -21,10 +23,26 @@ const SignUp = () => {
     setConfirmPassword(event.target.value);
   };
 
+  if (user) {
+    navigate("/home");
+  }
+
+  if (error) {
+    return (
+      <div>
+        <p className="text-danger">Error: {error.message}</p>
+      </div>
+    );
+  }
+
   const handleOnSubmit = (event) => {
     event.preventDefault();
     if (password !== confirmPassword) {
       alert("Password Did not match");
+      return;
+    }
+    if (password.length < 6) {
+      alert("Password length must be more than 6");
       return;
     }
     createUserWithEmailAndPassword(email, password);
@@ -42,7 +60,6 @@ const SignUp = () => {
             required
           />
         </Form.Group>
-
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Control
             onBlur={handlePasswordAtBlur}
@@ -62,6 +79,7 @@ const SignUp = () => {
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
+        {error}
         <Button variant="primary" type="submit">
           Register
         </Button>

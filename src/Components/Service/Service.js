@@ -1,8 +1,10 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom";
 const Service = ({ service }) => {
   const { name, description, img, price } = service;
+  const navigate = useNavigate();
   return (
     <div className="col-12 col-lg-4">
       <Card>
@@ -11,7 +13,11 @@ const Service = ({ service }) => {
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
           <h4>Price:{price}</h4>
-          <Button className="d-block w-75 mx-auto" variant="primary">
+          <Button
+            onClick={() => navigate("/checkout")}
+            className="d-block w-75 mx-auto"
+            variant="primary"
+          >
             Add To Cart
           </Button>
         </Card.Body>
