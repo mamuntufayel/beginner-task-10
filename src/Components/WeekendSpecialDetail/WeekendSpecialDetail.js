@@ -5,9 +5,9 @@ const WeekendSpecialDetail = ({ weekendSpecial }) => {
   const { name, img, description } = weekendSpecial;
   return (
     <div className="col-12 col-lg-4">
-      <Card style={{ width: "18rem" }}>
+      <Card>
         <Card.Img variant="top" src={img} />
-        <Card.Body>
+        <Card.Body className="text-center">
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
           <Button className="d-block w-75 mx-auto" variant="primary">

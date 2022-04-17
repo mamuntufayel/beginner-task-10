@@ -9,14 +9,22 @@ const Banner = () => {
     <div>
       <Carousel id="home">
         <Carousel.Item>
-          <img className="d-block w-100" src={banner1} alt="First slide" />
+          <img
+            className="d-block w-100 img-fluid"
+            src={banner1}
+            alt="First slide"
+          />
           <Carousel.Caption>
-            <h3>Passoin</h3>
+            <h3>Passion</h3>
             <p>Work hard then wait for result</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={banner2} alt="Second slide" />
+          <img
+            className="d-block w-100 img-fluid"
+            src={banner2}
+            alt="Second slide"
+          />
 
           <Carousel.Caption>
             <h3>MindSet</h3>
@@ -24,7 +32,11 @@ const Banner = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={banner3} alt="Third slide" />
+          <img
+            className="d-block w-100 img-fluid"
+            src={banner3}
+            alt="Third slide"
+          />
 
           <Carousel.Caption>
             <h3>Gain the pain</h3>

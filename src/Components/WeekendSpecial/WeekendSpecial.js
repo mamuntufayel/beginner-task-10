@@ -10,7 +10,7 @@ const WeekendSpecial = () => {
       .then((data) => setWeekendSpecial(data));
   }, []);
   return (
-    <div id="weekendSpecial" className="container">
+    <div id="weekendSpecial">
       <h2 className="text-primary text-center fw-bolder fs-3  my-4">
         My Weekend Special Services
       </h2>

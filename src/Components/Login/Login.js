@@ -3,6 +3,7 @@ import { Button, Form } from "react-bootstrap";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -10,6 +11,7 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const navigate = useNavigate();
+  let showError;
 
   const handleEmailAtBlur = (event) => {
     setEmail(event.target.value);
@@ -25,6 +27,14 @@ const Login = () => {
 
   if (user) {
     navigate("/home");
+  }
+
+  if (error) {
+    showError = (
+      <div>
+        <p className="text-danger">Error: {error.message}</p>
+      </div>
+    );
   }
 
   return (
@@ -51,6 +61,7 @@ const Login = () => {
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
+        {showError}
         <Button variant="primary" type="submit">
           Login
         </Button>
@@ -65,6 +76,7 @@ const Login = () => {
             </Link>
           </span>
         </p>
+        <SocialLogin></SocialLogin>
       </Form>
     </div>
   );
