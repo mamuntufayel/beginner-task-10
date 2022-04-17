@@ -61,15 +61,13 @@ const Login = () => {
             required
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
+
         {showError}
         <Button variant="primary" type="submit">
           Login
         </Button>
         <p>
-          Don't have a account? <span> </span>
+          Don't have an account? <span> </span>
           <span>
             <Link
               className="fw-bolder text-decoration-none text-success"

@@ -12,7 +12,8 @@ const SignUp = () => {
   let showError;
 
   const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
   const handleEmailAtBlur = (event) => {
     setEmail(event.target.value);
   };
@@ -76,9 +77,7 @@ const SignUp = () => {
             required
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
+
         {error}
         <Button variant="primary" type="submit">
           Register
