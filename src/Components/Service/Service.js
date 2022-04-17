@@ -1,4 +1,5 @@
 import React from "react";
+import "./Service.css";
 import { Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
@@ -6,9 +7,9 @@ const Service = ({ service }) => {
   const { name, description, img, price } = service;
   const navigate = useNavigate();
   return (
-    <div className="col-12 col-lg-4">
+    <div className="col-12 col-lg-4 box-shadow">
       <Card>
-        <Card.Img variant="top" src={img} />
+        <Card.Img className="img-fluid" variant="top" src={img} />
         <Card.Body className="text-center">
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>

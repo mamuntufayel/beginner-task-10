@@ -1,12 +1,14 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import "./WeekendSpecialDetail.css";
 
 const WeekendSpecialDetail = ({ weekendSpecial }) => {
   const { name, img, description } = weekendSpecial;
   const navigate = useNavigate();
+
   return (
-    <div className="col-12 col-lg-4">
+    <div className="col-12 col-lg-4 box-shadow">
       <Card>
         <Card.Img variant="top" src={img} />
         <Card.Body className="text-center">

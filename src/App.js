@@ -13,7 +13,7 @@ import SignUp from "./Components/SignUp/SignUp";
 
 function App() {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto app">
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
