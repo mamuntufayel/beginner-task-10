@@ -9,28 +9,28 @@
     {
         "id": 2,
         "name": "12 week fat destroy",
-        "price": "$100",
+        "price": "$435",
         "description": "In this package you get 3 months bodybuilding instructions",
         "img": "https://i.ibb.co/QKyhqpr/alexander-redl-qo1py-CD02t4-unsplash.jpg"
     },
     {
         "id": 3,
         "name": "6 week fat loss",
-        "price": "$150",
+        "price": "$350",
         "description": "In this package you get 6 weeks bodybuilding instructions",
         "img": "https://i.ibb.co/8dnf2Xv/samuel-girven-fq-Mu99l8sqo-unsplash.jpg"
     },
     {
         "id": 4,
         "name": "8 weeks belly fat loss",
-        "price": "$180",
+        "price": "$380",
         "description": "In this package you get 2 months bodybuilding instruction",
         "img": "https://i.ibb.co/gdrJg89/valery-sysoev-LDAir-ERNzew-unsplash.jpg"
     },
     {
         "id": 5,
         "name": "3 month mass gain",
-        "price": "$100",
+        "price": "$4500",
         "description": "In this package you get 3 months bodybuilding instruction.",
         "img": "https://i.ibb.co/JtQKyhx/anastase-maragos-9dz-WZQWZMd-E-unsplash.jpg"
     },

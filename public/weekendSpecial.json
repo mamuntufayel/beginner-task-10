@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Swimming",
+        "price": "$300",
+        "description": "In this package you can learn from me,how to swim",
+        "img": "https://i.ibb.co/BV8hX9g/extra-3.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Soccer Practice",
+        "price": "$350",
+        "description": "Every weekend I provide soccer practice",
+        "img": "https://i.ibb.co/wg1GgM0/extra-1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Cricket Practice",
+        "price": "$450",
+        "description": "Every weekend I provide cricket practice",
+        "img": "https://i.ibb.co/Z6pzK2Q/extra-2.jpg"
+    }
+]

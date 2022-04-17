@@ -1,8 +1,8 @@
 import React from "react";
-import { Card } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-const Service = ({ service }) => {
-  const { name, description, img, price } = service;
+import { Button, Card } from "react-bootstrap";
+
+const WeekendSpecialDetail = ({ weekendSpecial }) => {
+  const { name, img, description } = weekendSpecial;
   return (
     <div className="col-12 col-lg-4">
       <Card style={{ width: "18rem" }}>
@@ -10,7 +10,6 @@ const Service = ({ service }) => {
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          <h4>Price:{price}</h4>
           <Button className="d-block w-75 mx-auto" variant="primary">
             Add To Cart
           </Button>
@@ -20,4 +19,4 @@ const Service = ({ service }) => {
   );
 };
 
-export default Service;
+export default WeekendSpecialDetail;
