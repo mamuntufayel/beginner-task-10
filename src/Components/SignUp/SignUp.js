@@ -3,6 +3,7 @@ import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import SocialLogin from "../SocialLogin/SocialLogin";
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -61,7 +62,7 @@ const SignUp = () => {
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
         <Button variant="primary" type="submit">
-          Login
+          Register
         </Button>
         <p>
           Already Registered? <span> </span>
@@ -74,6 +75,7 @@ const SignUp = () => {
             </Link>
           </span>
         </p>
+        <SocialLogin></SocialLogin>
       </Form>
     </div>
   );
