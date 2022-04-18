@@ -11,11 +11,11 @@ The Hulk
 * You can also acknowledge about my weekend training.
 
 ### `Technology I have used:
---React app.
---React Bootstrap.
---react Router.
---Firebase
---React-firebase-hooks
+1.React app.
+2.React Bootstrap.
+3.react Router.
+4.Firebase.
+5.React-firebase-hooks.
 
 
 
