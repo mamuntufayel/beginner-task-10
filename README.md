@@ -4,7 +4,7 @@ The Hulk
 
 ## Available Scripts
 
-In the project directory, you can run:
+* I do different type of body shapping trainging
 
 ### `npm start`
 
