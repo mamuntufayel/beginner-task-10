@@ -19,13 +19,18 @@ const Header = () => {
       bg="primary"
       variant="dark"
     >
-      <Container>
-        <Navbar.Brand href="home#home">Desired Body Shape</Navbar.Brand>
+      <Container className="fs-4">
+        <Navbar.Brand className="fs-2" href="home#home">
+          Desired Body Shape
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="home#services">My Services</Nav.Link>
             <Nav.Link href="home#weekendSpecial">Weekend Special</Nav.Link>
+            <Nav.Link as={Link} to="blogs">
+              Blogs
+            </Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link as={Link} to="about">
